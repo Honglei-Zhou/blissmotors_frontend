@@ -1,0 +1,47 @@
+ .row {
+     width: 100%;
+     padding: 0px;
+     margin: 0px;
+ }
+
+ .leftcolumn {
+    float: right;
+    width: 10%;
+  }
+  
+  .rightcolumn {
+    float: right;
+    width: 10%;
+  }
+  
+  .maincolumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-width: 1140px;
+    text-align: center;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  @media screen and (max-width: 1425px) {
+    .leftcolumn,
+    .rightcolumn {
+      width: 0%;
+    }
+  
+    .maincolumn {
+      width: 100%;
+    }
+  }

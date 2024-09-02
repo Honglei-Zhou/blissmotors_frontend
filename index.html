@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon48.png" sizes="256x256"/>
+    <title>Car Leasing | BlissMotors</title>
+    <meta name="description" content="Bliss Motors is the world's first AI-powered platform for buying and leasing automobiles."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+      body{
+        background:#999;
+        text-align:center;
+        color: #333;
+        font-family:arial,verdana,sans-serif;
+      }
+    </style>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>history.pushState({}, "Application entry", location.hash.substring(2));</script>
+    <!-- <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '422380988318684',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v3.2'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script>
+        var md = new MobileDetect(window.navigator.userAgent);
+        if(md.is('iOS') || md.is('AndroidOS')) {
+          window.location.href = 'https://m.blisslease.com/'
+        }
+    </script>
+      </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <!-- This site is converting visitors into subscribers and customers with Rocketbots - https://rocketbots.io -->
+    <script src="https://app.rocketbots.io/facebook/chat/plugin/4131/540284639773983" async></script>
+    <!-- https://rocketbots.io/ -->
+  </body>
+</html>
